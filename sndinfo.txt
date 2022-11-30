@@ -1,99 +1,174 @@
-step/carpet1 carpet1
-step/carpet2 carpet2
-step/carpet3 carpet3
-step/carpet4 carpet4
-$random step/carpet
-	{ step/carpet1 step/carpet2 step/carpet3 step/carpet4 }
 
-step/crete1 crete1
-step/crete2 crete2
-step/crete3 crete3
-step/crete4 crete4
-$random step/crete
-	{ step/crete1 step/crete2 step/crete3 step/crete4 }
-
-step/default1 default1
-step/default2 default2
-step/default3 default3
-step/default4 default4
+step/default1 "sounds/footsteps/default1.wav"
+step/default2 "sounds/footsteps/default2.wav"
+step/default3 "sounds/footsteps/default3.wav"
+step/default4 "sounds/footsteps/default4.wav"
 $random step/default
-	{ step/default1 step/default2 step/default3 step/default4 }
+{
+	step/default1
+	step/default2
+	step/default3
+	step/default4
+}
 
-step/dirt1 dirt1
-step/dirt2 dirt2
-step/dirt3 dirt3
-step/dirt4 dirt4
+step/dirt1 "sounds/footsteps/dirt/dirt1.wav"
+step/dirt2 "sounds/footsteps/dirt/dirt2.wav"
+step/dirt3 "sounds/footsteps/dirt/dirt3.wav"
+step/dirt4 "sounds/footsteps/dirt/dirt4.wav"
 $random step/dirt
-	{ step/dirt1 step/dirt2 step/dirt3 step/dirt4 }
+{
+	step/dirt1
+	step/dirt2
+	step/dirt3
+	step/dirt4
+}
 
-step/gross1 gross1
-step/gross2 gross2
-step/gross3 gross3
-step/gross4 gross4
-$random step/gross
-	{ step/gross1 step/gross2 step/gross3 step/gross4 }
-
-step/grass1 grass1
-step/grass2 grass2
-step/grass3 grass3
-step/grass4 grass4
+step/grass1 "sounds/footsteps/grass/grass1.ogg"
+step/grass2 "sounds/footsteps/grass/grass2.ogg"
+step/grass3 "sounds/footsteps/grass/grass3.ogg"
+step/grass4 "sounds/footsteps/grass/grass4.ogg"
 $random step/grass
-	{ step/grass1 step/grass2 step/grass3 step/grass4 }
+{
+	step/grass1
+	step/grass2
+	step/grass3
+	step/grass4
+}
 
-step/gravel1 gravel1
-step/gravel2 gravel2
-step/gravel3 gravel3
-step/gravel4 gravel4
-$random step/gravel
-	{ step/gravel1 step/gravel2 step/gravel3 step/gravel4 }
+step/sand1 "sounds/footsteps/sand/sand1.wav"
+step/sand2 "sounds/footsteps/sand/sand2.wav"
+step/sand3 "sounds/footsteps/sand/sand3.wav"
+step/sand4 "sounds/footsteps/sand/sand4.wav"
+$random step/sand
+{
+	step/sand1
+	step/sand2
+	step/sand3
+	step/sand4
+}
 
-step/hot hot1
-$alias step/lava step/hot
-
-step/panel1 panel1
-step/panel2 panel2
-step/panel3 panel3
-step/panel4 panel4
-step/panel5 panel5
-$random step/panel
-	{ step/panel1 step/panel2 step/panel3 step/panel4 step/panel5 }
-$volume step/panel 0.6
-
-step/plank1 plank1
-step/plank2 plank2
-step/plank3 plank3
-step/plank4 plank4
-$random step/plank
-	{ step/plank1 step/plank2 step/plank3 step/plank4 }
-$volume step/plank 0.8
-
-step/slosh1 slosh1
-step/slosh2 slosh2
-step/slosh3 slosh3
-step/slosh4 slosh4
+step/slosh1 "sounds/footsteps/slosh/slosh1.wav"
+step/slosh2 "sounds/footsteps/slosh/slosh2.wav"
+step/slosh3 "sounds/footsteps/slosh/slosh3.wav"
+step/slosh4 "sounds/footsteps/slosh/slosh4.wav"
 $random step/slosh
-	{ step/slosh1 step/slosh2 step/slosh3 step/slosh4 }
+{
+	step/slosh1
+	step/slosh2
+	step/slosh3
+	step/slosh4
+}
 
-step/tile1 tile1
-step/tile2 tile2
-step/tile3 tile3
-step/tile4 tile4
-$random step/tile
-	{ step/tile1 step/tile2 step/tile3 step/tile4 }
+step/slime1 "sounds/footsteps/mud/mud1.wav"
+step/slime2 "sounds/footsteps/mud/mud2.wav"
+step/slime3 "sounds/footsteps/mud/mud3.wav"
+step/slime4 "sounds/footsteps/mud/mud4.wav"
+$random step/slime
+{
+	step/slime1
+	step/slime2
+	step/slime3
+	step/slime4
+}
 
-step/tin1 tin1
-step/tin2 tin2
-step/tin3 tin3
-step/tin4 tin4
-$random step/tin
-	{ step/tin1 step/tin2 step/tin3 step/tin4 }
+step/gravel1 "sounds/footsteps/gravel/gravel1.wav"
+step/gravel2 "sounds/footsteps/gravel/gravel2.wav"
+step/gravel3 "sounds/footsteps/gravel/gravel3.wav"
+step/gravel4 "sounds/footsteps/gravel/gravel4.wav"
+$random step/gravel
+{
+	step/gravel1
+	step/gravel2
+	step/gravel3
+	step/gravel4
+}
 
-step/wood1 wood1
-step/wood2 wood2
-step/wood3 wood3
-step/wood4 wood4
+step/carpet1 "sounds/footsteps/carpet/carpet1.ogg"
+step/carpet2 "sounds/footsteps/carpet/carpet2.ogg"
+step/carpet3 "sounds/footsteps/carpet/carpet3.ogg"
+step/carpet4 "sounds/footsteps/carpet/carpet4.ogg"
+$random step/carpet
+{
+	step/carpet1
+	step/carpet2
+	step/carpet3
+	step/carpet4
+}
+
+step/plank1 "sounds/footsteps/plank/plank1.wav"
+step/plank2 "sounds/footsteps/plank/plank2.wav"
+step/plank3 "sounds/footsteps/plank/plank3.wav"
+step/plank4 "sounds/footsteps/plank/plank4.wav"
+$random step/plank
+{
+	step/plank1
+	step/plank2
+	step/plank3
+	step/plank4
+}
+
+step/wood1 "sounds/footsteps/wood/wood1.ogg"
+step/wood2 "sounds/footsteps/wood/wood2.ogg"
+step/wood3 "sounds/footsteps/wood/wood3.ogg"
+step/wood4 "sounds/footsteps/wood/wood4.ogg"
 $random step/wood
-	{ step/wood1 step/wood2 step/wood3 step/wood4 }
+{
+	step/wood1
+	step/wood2
+	step/wood3
+	step/wood4
+}
+
+step/concrete1 "sounds/footsteps/concrete/concrete1.wav"
+step/concrete2 "sounds/footsteps/concrete/concrete2.wav"
+step/concrete3 "sounds/footsteps/concrete/concrete3.wav"
+step/concrete4 "sounds/footsteps/concrete/concrete4.wav"
+$random step/concrete
+{
+	step/concrete1
+	step/concrete2
+	step/concrete3
+	step/concrete4
+}
+
+step/panel1 "sounds/footsteps/tile/tile1.wav"
+step/panel2 "sounds/footsteps/tile/tile2.wav"
+step/panel3 "sounds/footsteps/tile/tile3.wav"
+step/panel4 "sounds/footsteps/tile/tile4.wav"
+$random step/panel
+{
+	step/panel1
+	step/panel2
+	step/panel3
+	step/panel4
+}
+
+step/tile1 "sounds/footsteps/tile/tile1.wav"
+step/tile2 "sounds/footsteps/tile/tile2.wav"
+step/tile3 "sounds/footsteps/tile/tile3.wav"
+step/tile4 "sounds/footsteps/tile/tile4.wav"
+$random step/tile
+{
+	step/tile1
+	step/tile2
+	step/tile3
+	step/tile4
+}
+
+step/tin1 "sounds/footsteps/metal/metal1.wav"
+step/tin2 "sounds/footsteps/metal/metal2.wav"
+step/tin3 "sounds/footsteps/metal/metal3.wav"
+step/tin4 "sounds/footsteps/metal/metal4.wav"
+$random step/tin
+{
+	step/tin1
+	step/tin2
+	step/tin3
+	step/tin4
+}
 
 $alias step/nuke step/slosh
 $alias step/sludge step/slosh
+
+step/hot "sounds/footsteps/hot1.ogg"
+$alias step/lava step/hot

@@ -24,7 +24,7 @@ class StepEventHandler : EventHandler
 		Sound test = StringTable.localize("$_STEP_" .. flat).indexOf("_STEP_");
 		
 		if (test == "{ no sound }") {
-			return "step/crete";
+			return "step/default";
 		}
 		
 		return StringTable.localize("$_STEP_" .. flat);
@@ -55,6 +55,7 @@ class StepEventHandler : EventHandler
 			{
 				pl = players[i].mo;
 				
+				//Stepping
 				if (players[i].onground)
 				{
 					speed = clamp(sqrt(pl.vel.x * pl.vel.x + pl.vel.y * pl.vel.y),
@@ -62,15 +63,14 @@ class StepEventHandler : EventHandler
 					
 					// you can probably find out that this means that a sound is
 					// only played when the player is moving > 2.0 speed
-					if (speed > 2.0)
+					if (speed > 6.0)
 					{
 						if (wait[i] <= 0.0)
 						{
-							pl.A_PlaySound(getStepSound(pl), CHAN_BODY,
-									clamp(speed / MAX_SPEED, 0.4, 1.0));
-							wait[i] = 7.0 * clamp(MAX_SPEED / speed, 1.0, 1.5);
+							pl.A_StartSound(getStepSound(pl), CHAN_AUTO,CHANF_OVERLAP, clamp(speed / MAX_SPEED, 0.4, 1.0));
+							//pl.A_StartSound("step/default", CHAN_AUTO,CHANF_OVERLAP, clamp(speed / MAX_SPEED, 0.4, 1.0));
+							wait[i] = 8.0 * clamp(MAX_SPEED / speed, 1.0, 1.5);
 						}
-						
 						--wait[i];
 					}
 					else
